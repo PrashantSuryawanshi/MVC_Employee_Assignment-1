@@ -1,0 +1,28 @@
+﻿<h3>Add New Employee Record</h3>
+<div class="container">
+    @{ Html.BeginForm();}
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Enter Employee Name")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("name")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Enter Employee Salary")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("salary")
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+        </div>
+        <div class="col-lg-3">
+           <input type="submit" value="Save" class="btn btn-success"/>
+        </div>
+    </div>
+    @{Html.EndForm();}
+</div>

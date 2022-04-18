@@ -1,0 +1,29 @@
+﻿<h3>Edit Employee Record</h3>
+<div class="container">
+    @{ Html.BeginForm();}
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Enter Employee Name")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("name",(string)ViewBag.Name)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Label("Enter Employee Salary")
+        </div>
+        <div class="col-lg-3">
+            @Html.TextBox("salary", (decimal)ViewBag.Salary)
+            @Html.Hidden("id", (int)ViewBag.Id)
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+        </div>
+        <div class="col-lg-3">
+            <input type="submit" value="Update" class="btn btn-warning" />
+        </div>
+    </div>
+    @{Html.EndForm();}
+</div>
